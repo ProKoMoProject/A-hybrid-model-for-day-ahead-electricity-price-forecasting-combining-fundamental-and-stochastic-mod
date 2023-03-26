@@ -1,12 +1,16 @@
-# A hybrid model for day ahead electricity price forecasting: combining fundamental and stochastic modelling
+# A hybrid model for day ahead electricity price forecasting: Combining fundamental and stochastic modelling
 
-### Oliver Grothe, Thomas Möbius, Felix Müsgens, Mira Watermeyer
+### Mira Watermeyer, Thomas Möbius, Oliver Grothe, Felix Müsgens
 
-Abstract tbd
+The accurate prediction of short-term electricity prices is vital for effective trading strategies, power plant scheduling, profit maximisation and efficient system operation. However, uncertainties in supply and demand make such predictions challenging. We propose a hybrid model that combines a techno-economic energy system model with stochastic models to address this challenge. The techno-economic model in our hybrid approach provides a deep understanding of the market. It captures the underlying factors and their impacts on electricity prices, which is impossible with statistical models alone. The statistical models incorporate non-techno-economic aspects, such as the expectations and speculative behaviour of market participants, through the interpretation of prices. The hybrid model generates both conventional point predictions and probabilistic forecasts, providing a comprehensive understanding of the market landscape. Probabilistic forecasts are particularly valuable because they account for market uncertainty, facilitating informed decision-making and risk management. Our model delivers state-of-the-art results, helping market participants to make informed decisions and operate their systems more efficiently.
 
 ### Keywords:
-Electricity markets, Electricity price forecasting, Energy system model, Error improvement, Hybrid model, Probabilisitc forecasting, Stochastic modelling
- 
+Electricity price forecasting
+Hybrid model
+Energy system modelling, 
+Stochastic modelling,
+Probabilistic forecasting 
+
 ### Links: 
 tba
 

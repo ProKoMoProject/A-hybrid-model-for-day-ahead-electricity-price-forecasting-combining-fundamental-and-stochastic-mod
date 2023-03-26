@@ -12,7 +12,9 @@ For GAMS, we use version
 For Matlab, the code is run on version "R2020.b". 
 
 For Python, we use Pyhton 3.9 by Anaconda. 
+
   Details on the package versions:
+
         alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/workNote: you may need to restart the kernel to use updated packages.
         anaconda-client==1.11.0
         anaconda-navigator==2.3.1

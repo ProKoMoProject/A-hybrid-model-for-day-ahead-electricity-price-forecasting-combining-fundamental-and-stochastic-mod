@@ -15,7 +15,7 @@ For Python, we use Pyhton 3.9 by Anaconda.
 
   Details on the package versions:
 
-        alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/workNote: you may need to restart the kernel to use updated packages.
+        alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
         anaconda-client==1.11.0
         anaconda-navigator==2.3.1
         anaconda-project @ file:///C:/Windows/TEMP/abs_91fu4tfkih/croots/recipe/anaconda-project_1660339890874/work

@@ -6,6 +6,7 @@ The accurate prediction of short-term electricity prices is vital for effective 
 
 ### Software details:
 The implementation of the hybrid model is done using GAMS, Matlab and Python. 
+
 For GAMS, we use version 
 
 For Matlab, the code is run on version "R2020.b". 

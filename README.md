@@ -15,7 +15,36 @@ Probabilistic forecasting
 tba
 
 ### The code reproduces the benchmarks from the paper 
-Note that energy system model output files are not uploaded to github due to limits on individual file size and on repository size in general. 
+All scripts can be found in the folder "02/scripts". 
+In the following, we list the main files to reproduce the results. Other files in the folder are included automatically in the stepwise calculations and do not have to run on their own. 
+
+Step 1: Data Pre-Processing
+
+For the improvement of the transmission system operators day-ahead load forecast we refer to https://github.com/ProKoMoProject/Enhancing-Energy-System-Models-Using-Better-Load-Forecasts
+
+Step 1/2: Data Pre-Processing and Parameter Density
+
+Model and forecast of the two-day-ahead load forecast (point forecast and scenario forecast) are provided in file "2_2DALoadforecast_point_scenarios.py". 
+
+Step 3: Energy System Optimisation Step
+
+
+
+Step 4: Post-Processing
+
+To forecast the individual point predictions of the six sub-models (univariate and multivariate), run file "4a_Post-processing step - Point prediction.m". 
+
+The probabilistic forecast is calculated through file "4b_Post-processing step - Probabilistic prediction.py". 
+
+### Results from the paper 
+All results generated with the hybrid model are uploaded in the folder "03/results". 
+
+File "hybrid model - point and probabilistic forecasts of the day-ahead electricity price.xlsx" shows the day-ahead price prediction, point and probabilistic, which is generated with the hybrid model.  
+
+File "hybrid model - results of the steps.xlsx" lists the results of the four steps.  
+
+### Data input to run code
+To run the code, some input data are required. In this repository, we provide all input data generated individually. For the input data that were used unchanged from the sources mentioned in the paper, we refer to the corresponding sources for the generation of the input data. 
 
 ### Citing IntEG
 

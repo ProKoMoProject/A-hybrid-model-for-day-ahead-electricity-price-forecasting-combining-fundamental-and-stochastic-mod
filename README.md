@@ -29,8 +29,11 @@ Model and forecast of the two-day-ahead load forecast (point forecast and scenar
 Step 3: Energy System Optimisation Step
 
 i) save all .gms files and the "Project_ProKoMo" file in the same folder
+
 ii) create a subfolder "data" and save there all .xlsx files
+
 iii) create a subfolder "results" to save the model output
+
 iv) open a .gms file for the respective year (e.g. "ProKoMo_rollingwindow_2016.gms" and run the model. All settings are already prepared in the code.
 
 Step 4: Post-Processing

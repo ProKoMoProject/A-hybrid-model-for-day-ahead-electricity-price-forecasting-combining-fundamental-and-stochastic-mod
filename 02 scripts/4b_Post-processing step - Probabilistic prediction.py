@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Probabilistic forecast for day-ahead electricity prices 
-Input:  - Six time series with at least 12 months of day-ahead point forecasts from six individual sub-models from the hybrid model's 
-          pre-processing step (univriate and multivariate framework, three different rolling window lengths)
-                - Excel-File, one column "Time", six column "Loadforecast"
-        - Final point predictions of the hybrid model 
+Input:  - Excel-File with: 
+                    - Six time series with at least 12 months of day-ahead point forecasts from six individual sub-models from the hybrid model's 
+                              pre-processing step (univriate and multivariate framework, three different rolling window lengths) (one column "Time", six columns with individual point predictions)
+                    - Final point predictions of the hybrid model (one column "Time", one column "Prediction")
+        - Excel-File, one column "Time", one column "Actual" containing the actual day-ahead electricity prices
 
 Output: Probabilistic Forecasts of the day-ahead electricity price, generated with the hybrid model
                 - estimation of different quantiles for every hour
@@ -26,9 +27,7 @@ import statsmodels.formula.api as smf
 EVALUATION OF DA PRICE PREDICTIONS
 """
 
-"""
-Load predictions and observations
-"""
+
 # Variables and Parameters
 file_path_preds = 'C:/Users/Prueba/Documents/Nachschalten Rechnung/QRA Python/Alternative Berechnung'
 filename_preds = 'Priceforecast.xlsx'

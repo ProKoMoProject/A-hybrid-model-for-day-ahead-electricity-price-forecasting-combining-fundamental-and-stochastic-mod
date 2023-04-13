@@ -29,11 +29,11 @@ EVALUATION OF DA PRICE PREDICTIONS
 
 
 # Variables and Parameters
-file_path_preds = 'C:/Users/Prueba/Documents/Nachschalten Rechnung/QRA Python/Alternative Berechnung'
+file_path_preds = ''
 filename_preds = 'Priceforecast.xlsx'
 sheetname_preds_comb ='resultingforecast'
 sheetname_preds_ind = 'UVMV'
-file_path_obs = 'C:/Users/Prueba/Documents/Nachschalten Rechnung/QRA Python/Alternative Berechnung'
+file_path_obs = ''
 filename_obs = 'DAprice_obs.xlsx'
 
 start_date_preds = '2016-01-01'

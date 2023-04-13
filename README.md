@@ -24,7 +24,7 @@ For the improvement of the transmission system operators day-ahead load forecast
 
 Step 1/2: Data Pre-Processing and Parameter Density
 
-Model and forecast of the two-day-ahead load forecast (point forecast and scenario forecast) are provided in file "2_2DALoadforecast_point_scenarios.py". 
+Model and forecast of the two-day-ahead load forecast (point forecast and scenario forecast) are provided in file "2_2DALoadforecast_point_scenarios.py". To run the code, an excel-file containing one column "Time" and one column "Loadforecast" needs to be prepared. Corresponding data either are provided by the transparency platform of the ENTSO-E or can be found in the excel file "hybrid model - results of the steps.xlsx" in folder 03/results, as they are a result of the first step as well. The path and name of the excel-file can be defined in the source code. 
 
 Step 3: Energy System Optimisation Step
 
@@ -38,9 +38,9 @@ iv) open a .gms file for the respective year (e.g. "ProKoMo_rollingwindow_2016.g
 
 Step 4: Post-Processing
 
-To forecast the individual point predictions of the six sub-models (univariate and multivariate), run file "4a_Post-processing step - Point prediction.m". 
+To forecast the individual point predictions of the six sub-models (univariate and multivariate), run file "4a_Post-processing step - Point prediction.m". To run the code, an excel-file containing three columns (date, real_observation, prediction) (in that order) needs to be prepared. The real observations describe the actual day-ahead prices, and the predictions the price estimators generated after the energy system optimisation step. Another excel-file with the two columns "date" and "wind generation" needs to be included as well. The used day-ahead wind generation forecast is provided by the ENTSO-E transparency platform. Last, an excel-file containing holidays is needed. The file is provided in the folder 01/data. All filenames, sheetnames and the path of the files are set in the source code. 
 
-The probabilistic forecast is calculated through file "4b_Post-processing step - Probabilistic prediction.py". 
+The probabilistic forecast is calculated through file "4b_Post-processing step - Probabilistic prediction.py". Therefore, two excel-files are needed. The first file contains two sheets. In the first sheet "UVMV", a column with timestemps and six addiitional columns is provided. The six columns are filled with the six individual point predictions generated with the source code "4a_Post-processing step - Point prediction.m". Corresponding predictions can be found in the excel file "hybrid model - results of the steps.xlsx" in folder 03/results, as they are a result of the fourth step as well. The second sheet contains a column with the same timestemps and a column with the final point prediction of the hybrid model. It can be found in the excel file "hybrid model - point and probabilistic forecasts of the day-ahead electricity price.xlsx" in folder "03/results". Last, an excel-file containing the actual day-ahead prices needs to be included. The paths, filenames (and sheetnames) can be set in the source code. 
 
 ### Results from the paper 
 All results generated with the hybrid model are uploaded in the folder "03/results". 
@@ -50,7 +50,7 @@ File "hybrid model - point and probabilistic forecasts of the day-ahead electric
 File "hybrid model - results of the steps.xlsx" lists the results of the four steps.  
 
 ### Data input to run code
-To run the code, some input data are required. In this repository, we provide all input data generated individually. For the input data that were used unchanged from the sources mentioned in the paper, we refer to the corresponding sources for the generation of the input data. 
+To run the code, some input data are required (see detailed information in the description of running the source code). In this repository, we provide all input data generated individually. For the input data that were used unchanged from the sources mentioned in the paper, we refer to the corresponding sources for the generation of the input data. 
 
 ### Citing IntEG
 

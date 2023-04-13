@@ -30,11 +30,11 @@ Step 3: Energy System Optimisation Step
 
 i) save all .gms files and the "Project_ProKoMo" file in the same folder
 
-ii) create a subfolder "data" and save there all .xlsx files
+ii) create a subfolder "data" and save there all .xlsx files. Note that gas prices are not provided (due to copyright issues) and have to be added in the data file "InputData_allyears.xlsx"
 
 iii) create a subfolder "results" to save the model output
 
-iv) open a .gms file for the respective year (e.g. "ProKoMo_rollingwindow_2016.gms" and run the model. All settings are already prepared in the code.
+iv) open a .gms file for the respective year (e.g. "ProKoMo_rollingwindow_2016.gms") and run the model. All settings are already prepared in the code.
 
 Step 4: Post-Processing
 
